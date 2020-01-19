@@ -1,5 +1,6 @@
 body {
     background-image: url(https://image.freepik.com/free-vector/hamburger-drawing-pattern-big-burger-cartoon-style-background-fast-food-ornament_104374-29.jpg);
+    font-family: 'Roboto', sans-serif;
 }
 
 .delete-burger, .change-devoured {
@@ -8,6 +9,6 @@ body {
     align-items: center;
 }
 
-button {
-    
+.buffer-top {
+    margin-top: 20px;
 }
