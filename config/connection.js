@@ -1,12 +1,14 @@
 var mysql = require("mysql");
 
-var connection = mysql.createConnection({
-  host: "tyduzbv3ggpf15sx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
-  port: 3306,
-  user: "	sxrn262bva23340t",
-  password: "	je8hb0umbmy1kr4v",
-  database: "	jb3v1gm87wa3imka"
-});
+connection = mysql.createConnection("mysql://sxrn262bva23340t:je8hb0umbmy1kr4v@tyduzbv3ggpf15sx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/jb3v1gm87wa3imka");
+
+// var connection = mysql.createConnection({
+//   host: "tyduzbv3ggpf15sx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
+//   port: 3306,
+//   user: "	sxrn262bva23340t",
+//   password: "	je8hb0umbmy1kr4v",
+//   database: "	jb3v1gm87wa3imka"
+// });
 
 // var connection = mysql.createConnection({
 //   host: "localhost",
