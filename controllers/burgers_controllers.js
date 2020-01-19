@@ -2,10 +2,10 @@ var express = require("express");
 
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
 var burger = require("../models/burger.js");
 
-// Create all our routes and set up logic within those routes where required.
+
+//Pulls all the info from the db and sends it to index.handlebars to be dislayed
 router.get("/", function(req, res) {
   burger.all(function(data) {
     var hbsObject = {
@@ -16,6 +16,7 @@ router.get("/", function(req, res) {
   });
 });
 
+//Creates new entry that is added to database
 router.post("/api/burgers", function(req, res) {
   burger.create([
     "burger_name"
@@ -27,6 +28,8 @@ router.post("/api/burgers", function(req, res) {
   });
 });
 
+
+// Updates the database with new boolean
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -44,6 +47,7 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
+// Deletes selected entry from the database.
 router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
