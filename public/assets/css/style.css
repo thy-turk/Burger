@@ -1,0 +1,13 @@
+body {
+    background-image: url(https://image.freepik.com/free-vector/hamburger-drawing-pattern-big-burger-cartoon-style-background-fast-food-ornament_104374-29.jpg);
+}
+
+.delete-burger, .change-devoured {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    
+}
